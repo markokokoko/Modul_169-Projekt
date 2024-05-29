@@ -10,4 +10,6 @@ Die alte Moodle-Instanz läuft aktuell auf dem Port 80. Nach Anforderungen muss 
 Damit die Moodle-Instanz über den Port 8080 läuft, müssen folgende Config-Files angepasst werden:
 
 1. ports.conf Datei anpassen:
-Die Datei findet man unter "etc/apache2"
+Die Datei findet man unter "etc/apache2". In der Datei passt man nun den Port 80 -> 8080 an:
+
+
