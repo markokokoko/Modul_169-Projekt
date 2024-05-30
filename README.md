@@ -5,3 +5,8 @@ Das Ziel dieses Projektes ist es, eine bestehende Moodle-Instanz in eine Umgebun
 
 ## Inhalt Repository
 In diesem Repository werden folgende Punkte festgehalten:
+- Konfigurationsdateien
+- Projekt Anforderungen
+- Screenshots der funktionierenden Lösung
+- Reflexion
+- Fazit
