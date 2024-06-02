@@ -109,7 +109,12 @@ Die Moodle-Seite konnte aufgerufen werden. Nun kann man der Installation Schritt
 ![nachlogin](https://github.com/markokokoko/Modul_169-Projekt/blob/main/Bilder/nachloginetc2.png)
 
 ## Moodle auf neuste Version aktualisieren
+Die Anleitung für die Aktualisierung auf die neuste Version ist im File:
 [Anleitung für die Aktualisierung](https://github.com/markokokoko/Modul_169-Projekt/blob/main/Dokumentation/Aktualisierung_Moodle.md)
+
+## Tests
+Die Test werden in folgendem File festgehalten:
+![Tests](https://github.com/markokokoko/Modul_169-Projekt/blob/main/Dokumentation/Tests)
 
 
 
