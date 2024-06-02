@@ -17,9 +17,10 @@ Die Datei findet man unter "/etc/apache2". In der Datei passt man nun den Port 8
 
 2. 000-default.conf Datei anpassen:
 Die Datei findet man unter "/etc/apache2/sites-enabled". In dieser Datei ändert man den Port in der ersten Zeile zu Port 8080:
+
 ![000-default-sites](https://github.com/markokokoko/Modul_169-Projekt/blob/main/Bilder/000-default.conf.png)
 
-3. config.php Datei anpassen:
+4. config.php Datei anpassen:
 Die letzte Datei welche angepasst werden muss, ist die config.php Datei. Da dies eine Read-Only Datei ist, kann man die Datei über das Terminal öffen und bearbeiten:
 ![config.php1](https://github.com/markokokoko/Modul_169-Projekt/blob/main/Bilder/config.php.png)
 
