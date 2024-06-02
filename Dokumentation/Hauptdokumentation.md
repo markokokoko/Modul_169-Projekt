@@ -1,12 +1,39 @@
 # Inhalt
-- Alte Moodle-Instanz
+1. Vorbereitung
+- Backup der alten Moodle-Instanz (SQLDump)
+- VM Updates durchführen & Benötigte Extension etc. installieren
 
--
--
--
+2. Anpassung alte Moodle-Instanz
+- Port ändern
+- Als alte Instanz kennzeichnen
 
-## Anpassungen alte Moodle-Instanz
+3. Container Umgebung erstellen
+- Docker-Compose File ausführen
 
+4. Datenmigration
+- Dump in Container exportieren
+- Dump importieren in die neue Datenbank
+
+5. Überprüfen
+- Lösungen & Tests
+
+## 1. Vorbereitung
+### Backup erstellen
+Bevor auf der VM irgenwelche Änderungen vorgenommen werden, wird zuerst ein Backup erstellt.
+Dafür führt man folgenden Befehl im Terminal aus: "```bash mysqldump -u root -p moodle > MoodleDump.sql```" 
+![Dump](https://github.com/markokokoko/Modul_169-Projekt/blob/main/Bilder/Dump.png)
+
+Das File wurde nun im aktuellen Verzeichnis abgepseichert. (/home/vmadmin).
+![DumpFile](https://github.com/markokokoko/Modul_169-Projekt/blob/main/Bilder/dumpFile.png)
+
+### VM Updates & weitere benötigte Features
+Da die VM nicht auf dem aktuellen Stand ist und recht veraltet ist, ist es wichtig vor der Migration die VM auf den neusten Stand zu bringen. Werden die Updates etc. nicht durchgeführt ist es nicht möglich die Container einwandfrei zu starten.
+
+Folgende Schritte können durchgeführt werden:
+
+
+
+## 2. Anpassungen alte Moodle-Instanz
 ### Port ändern
 Die alte Moodle-Instanz läuft aktuell auf dem Port 80. Nach Anforderungen muss die alte Moodle-Instanz nach der Migration weiterhin erreichbar sein, jedoch über den Port 8080. 
 Damit die Moodle-Instanz über den Port 8080 läuft, müssen folgende Config-Files angepasst werden:
