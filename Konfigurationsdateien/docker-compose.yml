@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  mariadb:
+    image: mariadb:latest # Neustes Moodle-Image
+    restart: unless-stopped # Startet den Container neu
+    environment:  # Umgebungsvariabeln
+      MYSQL_DATABASE: moodle
+      MYSQL_USER: user 
+      MYSQL_ROOT_PASSWORD: roman123 
+      MYSQL_PASSWORD: roman123 
+    volumes: # Bindet ein Volumen an das Verzeichnis /var/lib/mysql im Container
+      - mariadb_data:/var/lib/mysql
+    networks: # Verbindet den Container mit dem Netzwerk 'moodle_net2'
+      - moodle_net2
+    ports: # Leitet den Port 3307 auf den internen Port 3306 des Containers weiter
+      - '3307:3306'
+
+  moodle:
+    build:
+      context: . 
+      dockerfile: Dockerfile # Verwendet das Dockerfile im aktuellen Verzeichnis
+    environment: # Umgebungsvariabeln
+      MOODLE_DATABASE_NAME: moodle 
+      MOODLE_DATABASE_HOST: mariadb 
+      MOODLE_DATABASE_USER: user 
+      MOODLE_DATABASE_PASSWORD: roman123 
+    volumes: # Bindet Volumen an Verzeichnisse im Container
+      - moodle_data:/var/www/html/moodle
+      - moodledata_data:/var/moodledata
+    depends_on: # Definiert Abhängigkeiten, startet 'mariadb' vor diesem Service
+      - mariadb
+    networks: # Verbindet den Container mit dem Netzwerk 'moodle_net2'
+      - moodle_net2
+    ports: # Leitet die Ports 80 und 443 des Hosts auf die entsprechenden Ports des Containers weiter
+      - '80:80'
+      - '443:443'
+    restart: unless-stopped # Startet den Container neu
+
+volumes:
+  mariadb_data:
+    driver: local # Definiert ein lokales Volumen für die MariaDB-Daten
+  moodle_data:
+    driver: local # Definiert ein lokales Volumen für die Moodle-Anwendungsdaten
+  moodledata_data:
+    driver: local # Definiert ein lokales Volumen für die Moodle-Daten
+
+networks:
+  moodle_net2:
+    driver: bridge # Verwendet den Bridge-Treiber für 'moodle_net2'
