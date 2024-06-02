@@ -43,7 +43,7 @@ Folgende Schritte müssen durchgeführt werden (Befehle können 1zu1 kopiert wer
 Nach diesen Schritten ist die VM nun ready für die weiteren Schritte.
 
 ## 2. Anpassungen alte Moodle-Instanz
-
+[Anpassungen für die alte Moodle-Instanz](https://github.com/markokokoko/Modul_169-Projekt/blob/main/Dokumentation/Anpassung_AltesMoodle.md)
 
 
 ### Docker-Compose-File ausführen
