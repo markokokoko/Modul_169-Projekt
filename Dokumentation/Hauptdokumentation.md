@@ -76,9 +76,11 @@ Am Anfang wurde bereits ein Backup (Dump) erstellt.
 
 ## Moodle-Installation
 Die Moodle-Seite konnte aufgerufen werden. Nun kann man der Installation Schritt-für-Schritt folgen:
-1. ![Plugin](https://github.com/markokokoko/Modul_169-Projekt/blob/main/Bilder/startseite2.png)
+1.
+![Plugin](https://github.com/markokokoko/Modul_169-Projekt/blob/main/Bilder/startseite2.png)
 
-2. ![Einstellung](https://github.com/markokokoko/Modul_169-Projekt/blob/main/Bilder/Datenbankeinstellung.png)
+2.
+ ![Einstellung](https://github.com/markokokoko/Modul_169-Projekt/blob/main/Bilder/Datenbankeinstellung.png)
 
 3. Datenbank Angaben einfügen:
 ![Daten](https://github.com/markokokoko/Modul_169-Projekt/blob/main/Bilder/datenbankeinstellungenuser.png)
