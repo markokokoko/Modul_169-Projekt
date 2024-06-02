@@ -47,4 +47,5 @@ Dafür müssen nun folgende Schritte erledigt / gemacht werden.
 14. Wir man nun sehen kann, ist Moodle auf der aktuellsten Version:
 ![uptodate](https://github.com/markokokoko/Modul_169-Projekt/blob/main/Bilder/moodleuptodate.png)
 
-[Hauptdokumentation](https://github.com/markokokoko/Modul_169-Projekt/blob/main/Dokumentation/Hauptdokumentation.md)
+
+### [Zurück zur Hauptdokumentation](https://github.com/markokokoko/Modul_169-Projekt/blob/main/Dokumentation/Hauptdokumentation.md)
