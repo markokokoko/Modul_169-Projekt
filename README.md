@@ -8,5 +8,5 @@ In diesem Repository handelt es sich um eine Migration einer älteren Moodle-Ins
 Dieses Repository enthält folgende Hauptordner:
 
 1.	[Konfigurations-Files](https://github.com/markokokoko/Modul_169-Projekt/tree/main/Konfigurationsdateien)): Der Ordner "Konfigurationsdateien" enthält alle Konfigurations-Files, die für Migration benötigt werden.
-3. 	[Bilder](https://github.com/markokokoko/Modul_169-Projekt/tree/main/Bilder)): Der Ordner Bilder enthält alle Bilder, welche in dem gesamten Projekt verwendet wurden. (Für Dokumentation, Testbild etc.)
-4.	[Dokumentation](https://github.com/markokokoko/Modul_169-Projekt/tree/main/Dokumentation): Der Ordner Dokumentation enthält alle erstellten Dokumentationen inkl. Reflexionen, Tests, sowie auch die Hauptdokumentation.
+3. 	[Bilder](https://github.com/markokokoko/Modul_169-Projekt/tree/main/Bilder)): Der Ordner Bilder enthält alle Bilder, welche für diese Repository verwendet wurden.
+4.	[Dokumentation](https://github.com/markokokoko/Modul_169-Projekt/tree/main/Dokumentation): Der Ordner Dokumentation enthält die Hauptdokumentation inkl. weitere Anleitungen, Informationen etc.
