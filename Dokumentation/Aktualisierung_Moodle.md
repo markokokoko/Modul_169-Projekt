@@ -18,33 +18,33 @@ Dafür müssen nun folgende Schritte erledigt / gemacht werden.
 ```bash git config --global user.name "Roman"```
 ![bilder](https://github.com/markokokoko/Modul_169-Projekt/blob/main/Bilder/configahpasse.png)
 
-8. Dies ist der nächste Befehl, welcher ausgeführt werden muss. Der ist nützlich, um sicherzustellen, dass man die neusten Änderungen von allen Remote-Repositories erhält:
+7. Dies ist der nächste Befehl, welcher ausgeführt werden muss. Der ist nützlich, um sicherzustellen, dass man die neusten Änderungen von allen Remote-Repositories erhält:
 ```bash git fetch --all```
 ![fetch](https://github.com/markokokoko/Modul_169-Projekt/blob/main/Bilder/gitfetchall.png)
 
-9. git stash wird nun ausgeführt das keine ungesicherten Änderungen im Verzeichnis sind und dieses sauber ist.
+8. git stash wird nun ausgeführt das keine ungesicherten Änderungen im Verzeichnis sind und dieses sauber ist.
 ```bash git stash```
 ![stash](https://github.com/markokokoko/Modul_169-Projekt/blob/main/Bilder/gitstash.png)
 
-10. Nun wird ein Befehl verwendet um zum Branch "MOODLE_404_STABLE" wechselt.
+9. Nun wird ein Befehl verwendet um zum Branch "MOODLE_404_STABLE" wechselt.
 ```bash git checkout MOODLE_404_STABLE```
 ![stable](https://github.com/markokokoko/Modul_169-Projekt/blob/main/Bilder/gitcheckout.png)
 
-11. Mit diesem Befehl kann man nun die Branches überprüfen:
+10. Mit diesem Befehl kann man nun die Branches überprüfen:
 ```bash git branch```
 ![gitbranch](https://github.com/markokokoko/Modul_169-Projekt/blob/main/Bilder/gitbranch.png)
 
-12. Nun kann man die Moodle-Seite reloaden und kommt nun auf folgende Seite. Nun wird angefordert ein Versions-Upgrade auf v4.4+ zu machen. Hier kann man nun die Updates etc. wieder durchklicken wie beim Abschnitt "Moodle-Installation erklärt"
+11. Nun kann man die Moodle-Seite reloaden und kommt nun auf folgende Seite. Nun wird angefordert ein Versions-Upgrade auf v4.4+ zu machen. Hier kann man nun die Updates etc. wieder durchklicken wie beim Abschnitt "Moodle-Installation erklärt"
 ![upgrade44](https://github.com/markokokoko/Modul_169-Projekt/blob/main/Bilder/upgradeto44.png)
 
-13. Auf folgender Seite ist noch anzumerken, dass man hier ein häckchen setzten kann und dadruch ebenfalls weiter machen kann.
+12. Auf folgender Seite ist noch anzumerken, dass man hier ein häckchen setzten kann und dadruch ebenfalls weiter machen kann.
 ![sms](https://github.com/markokokoko/Modul_169-Projekt/blob/main/Bilder/smsmobnilphone.png)
 
-14. Auf folgender Seite, müssen keine Änderungen vorgenommen werden. Man kann nach unten scrollen und auf weiter klicken:
+13. Auf folgender Seite, müssen keine Änderungen vorgenommen werden. Man kann nach unten scrollen und auf weiter klicken:
 ![weiterklicken](https://github.com/markokokoko/Modul_169-Projekt/blob/main/Bilder/moodlemodul169.png)
 
 
-15. Wir man nun sehen kann, ist Moodle auf der aktuellsten Version:
+14. Wir man nun sehen kann, ist Moodle auf der aktuellsten Version:
 ![uptodate](https://github.com/markokokoko/Modul_169-Projekt/blob/main/Bilder/moodleuptodate.png)
 
 
