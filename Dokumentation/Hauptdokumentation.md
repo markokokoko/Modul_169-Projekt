@@ -45,7 +45,7 @@ Nach diesen Schritten ist die VM nun ready für die weiteren Schritte.
 ## 2. Anpassungen alte Moodle-Instanz
 [Anpassungen für die alte Moodle-Instanz](https://github.com/markokokoko/Modul_169-Projekt/blob/main/Dokumentation/Anpassung_AltesMoodle.md)
 
-
+## Container Umgebung erstellen
 ### Docker-Compose-File ausführen
 Die alte Instanz läuft nun auf Port 8080. Daher ist der Port 80 nun nicht mehr besetzt. 
 Nun kann man also das Docker-Compose-File ausführen und zwar wie folgt.
