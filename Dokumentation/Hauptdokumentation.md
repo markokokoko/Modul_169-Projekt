@@ -8,6 +8,7 @@
 - Als alte Instanz kennzeichnen
 
 3. Container Umgebung erstellen
+- Docker-Image erstellen
 - Docker-Compose File ausführen
 
 4. Datenmigration
@@ -20,7 +21,7 @@
 ## 1. Vorbereitung
 ### Backup erstellen
 Bevor auf der VM irgenwelche Änderungen vorgenommen werden, wird zuerst ein Backup erstellt.
-Dafür führt man folgenden Befehl im Terminal aus: "```bash mysqldump -u root -p moodle > MoodleDump.sql```" 
+Dafür führt man folgenden Befehl im Terminal aus: ```bash mysqldump -u root -p moodle > MoodleDump.sql```
 ![Dump](https://github.com/markokokoko/Modul_169-Projekt/blob/main/Bilder/Dump.png)
 
 Das File wurde nun im aktuellen Verzeichnis abgepseichert. (/home/vmadmin).
@@ -29,9 +30,17 @@ Das File wurde nun im aktuellen Verzeichnis abgepseichert. (/home/vmadmin).
 ### VM Updates & weitere benötigte Features
 Da die VM nicht auf dem aktuellen Stand ist und recht veraltet ist, ist es wichtig vor der Migration die VM auf den neusten Stand zu bringen. Werden die Updates etc. nicht durchgeführt ist es nicht möglich die Container einwandfrei zu starten.
 
-Folgende Schritte können durchgeführt werden:
+Folgende Schritte müssen durchgeführt werden (Befehle können 1zu1 kopiert werden):
+
+- Paketlisten aktualisieren: ```bash sudo apt update```
+- Upgrade aller installierten Pakete: ```bash sudo apt upgrade```
+
+- Docker-Compose installieren: ```bash apt install docker-compose```
+- Maschine neustarten: ```bash sudo reboot```
 
 
+
+Nach diesen Schritten ist die VM nun ready für die weiteren Schritte.
 
 ## 2. Anpassungen alte Moodle-Instanz
 ### Port ändern
@@ -44,6 +53,7 @@ Die Datei findet man unter "/etc/apache2". In der Datei passt man nun den Port 8
 
 2. 000-default.conf Datei anpassen:
 Die Datei findet man unter "/etc/apache2/sites-enabled". In dieser Datei ändert man den Port in der ersten Zeile zu Port 8080:
+
 
 ![000-default-sites](https://github.com/markokokoko/Modul_169-Projekt/blob/main/Bilder/000-default.conf.png)
 
@@ -76,5 +86,19 @@ Um dies direkt auf der Startseite zu kennzeichnen, kann man folgende Schritte be
 
 5. Ausloggen und Startseite überprüfen:
 ![neuestartseite](https://github.com/markokokoko/Modul_169-Projekt/blob/main/Bilder/neuestartseite.png)
+
+
+### Docker-Compose-File ausführen
+Die alte Instanz läuft nun auf Port 8080. Daher ist der Port 80 nun nicht mehr besetzt. 
+Nun kann man also das Docker-Compose-File ausführen und zwar wie folgt.
+
+1. Darauf achten, dass das Dockerfile und das Docker-Compose-File im gleichen Verzeichniss liegt. (In dieser Anleitung liegen die Files Im home Verzeichnis )
+
+2. Docke-Compose-File ausführen (Dies kann eher lange dauern: ```bash docker-compose up -d```
+
+Nun werden die Container, Volumes, das Image und das Netzwerk erstellt. 
+
+
+
 
 
