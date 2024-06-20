@@ -114,7 +114,7 @@ Die Anleitung für die Aktualisierung auf die neuste Version ist im File:
 
 ## Tests
 Die Test werden in folgendem File festgehalten:
-[Tests](https://github.com/markokokoko/Modul_169-Projekt/blob/main/Dokumentation/Tests)
+[Tests](https://github.com/markokokoko/Modul_169-Projekt/blob/main/Dokumentation/Tests.md)
 
 
 
